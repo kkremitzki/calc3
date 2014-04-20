@@ -1,5 +1,9 @@
 \documentclass{article}
 \usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{sidecap}
+\usepackage{wrapfig}
+\DeclareGraphicsExtensions{.jpg}
 \begin{document}
 \title{Project 3: Riemann Sums of a Double Integral}
 \author{Kurt Kremitzki\\
@@ -8,9 +12,13 @@
 \maketitle
 % Comments?
 
-{\bf Hello} World!
+%I want to talk about double integrals, expressed as $\iint\limits_R f(x,y)\mathrm{d}A= \int_c^d\int_a^b f(x,y) \mathrm{d}x \mathrm{d}y$.
+My objective in this project is to explore double integrals as a limit of Riemann prisms. The function of interest is:
 
-I want to talk about double integrals, expressed as $\iint f(x,y)\mathrm{d}A= \int_c^d\int_a^b f(x,y) \mathrm{d}x \mathrm{d}y$.
+\begin{figure}[h]
+$f(x,y) = 4 - x^2 + y
+\hfill R = [-2,2] \times [0,2]$
+\end{figure}
 
 These are expressible as the limit of Riemann prisms:
 \begin{equation}
@@ -19,9 +27,19 @@ These are expressible as the limit of Riemann prisms:
 
 where $\Delta x = \frac{b-a}{m}$ and $\Delta y = \frac{d - c}{n}$.
 
+Additionally, $x \in [a, b]$ and $y \in [c, d]$.
+
+Lookie here:
+
 % Show xy-region of integration with intervals in 2d
 % Show rectangular prisms approximating surface in 3d
 \section{Approximation with Rectangular Prisms}
+\begin{SCfigure}
+    \centering
+    \includegraphics[scale=0.1]{knot_g10}
+    \caption{Awesome Image}
+\end{SCfigure}
+
     \ldots text \ldots
 
 % Show f(x,y) = 4 - x² + y as a surface in 3d
