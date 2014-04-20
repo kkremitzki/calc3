@@ -1,4 +1,5 @@
 \documentclass{article}
+\usepackage{amsmath}
 \begin{document}
 \title{Project 3}
 \author{Kurt Kremitzki\\
@@ -9,7 +10,12 @@
 
 {\bf Hello} World!
 
-I want to talk about double integrals, expressed as $\int_c^d\int_a^b f(x,y) dx$.
+I want to talk about double integrals, expressed as $\iint f(x,y)\mathrm{d}A= \int_c^d\int_a^b f(x,y) \mathrm{d}x \mathrm{d}y$.
+
+These are expressible as the limit of Riemann prisms:
+\begin{equation}
+    \lim_{m,n \to \infty} \sum_{i=1}^{m} \sum_{j=1}^{n} f(x_{ij}^{ *}, y_{ij}^{ *}) \Delta x \Delta y
+\end{equation}
 
 % Show xy-region of integration with intervals in 2d
 % Show rectangular prisms approximating surface in 3d
