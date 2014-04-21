@@ -1,8 +1,5 @@
 \documentclass{article}
-\usepackage{amsmath}
-\usepackage{graphicx}
-\usepackage{sidecap}
-\usepackage{wrapfig}
+\usepackage{amsmath, graphicx, sidecap, wrapfig, slashbox, booktabs}
 \DeclareGraphicsExtensions{.jpg}
 \begin{document}
 \title{Project 3: Riemann Sums of a Double Integral}
@@ -35,13 +32,22 @@ Lookie here:
 % Show xy-region of integration with intervals in 2d
 % Show rectangular prisms approximating surface in 3d
 \section{Approximation with Rectangular Prisms}
+
 \begin{SCfigure}
     \centering
     \includegraphics[scale=0.1]{knot_g10}
     \caption{Awesome Image}
 \end{SCfigure}
 
-    \ldots text \ldots
+    \ldots text \ldots \\ 
+    \noindent
+    \begin{tabular}{|l||*{4}{c|}}\hline
+        \backslashbox{y}{x}
+        &\makebox[3em]{$\frac{1}{4}$}&\makebox[3em]{$\frac{3}{4}$}&\makebox[3em]{$\frac{5}{4}$}
+        &\makebox[3em]{$\frac{7}{4}$}\\\hline
+        -1 & 2.9375 & 2.4375 & 1.4375 & -0.0625 \\\hline
+        1 & 4.9375 & 4.4375 & 3.4375 & 1.9375 \\\hline
+    \end{tabular}
 
 % Show f(x,y) = 4 - x² + y as a surface in 3d
 \section{Volume as a Double Integral}
