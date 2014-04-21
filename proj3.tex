@@ -13,7 +13,8 @@
 % Comments?
 
 %I want to talk about double integrals, expressed as $\iint\limits_R f(x,y)\mathrm{d}A= \int_c^d\int_a^b f(x,y) \mathrm{d}x \mathrm{d}y$.
-My objective in this project is to explore double integrals as a limit of Riemann prisms. The function of interest is:
+My objective in this project is to explore double integrals as a limit of Riemann prisms. In particular, I will be examining a function
+over a region defined as:
 
 \begin{figure}[h]
 $f(x,y) = 4 - x^2 + y
@@ -44,10 +45,12 @@ Lookie here:
 
 % Show f(x,y) = 4 - x² + y as a surface in 3d
 \section{Volume as a Double Integral}
-    \ldots text \ldots
+    Because our particular function $f(x,y) \geq 0$ over the region of integration \\
+    $R = [-2, 2] \times [0, 2]$, we can
+    interpret the double integral over this region as the volume under the surface $z = f(x, y)$. Therefore, 
 \begin{gather}
-    \notag{\int_{-2}^2 \int_0^2 (4 - x^2 + y) \, \mathrm{d}x \, \mathrm{d}y = \int_{-2}^2 \Big[ 4x - \frac{x^3}{3} + xy \Big]_{x = 0}^{x = 2} \: \mathrm{d}y} \\
-    \notag{= \int_{-2}^2 (\frac{16}{3} + 2y) \, \mathrm{d}y = \frac{16}{3}y + y^2 \Big|_{-2}^{2} = \Bigg[\Big(\frac{16}{3}(2) + 4\Big) - \Big(\frac{16}{3}(-2) + 4\Big)\Bigg]} \\
+    \notag{V = \int_{-2}^2 \int_0^2 (4 - x^2 + y) \, \mathrm{d}x \, \mathrm{d}y = \int_{-2}^2 \Big[ 4x - \frac{x^3}{3} + xy \Big]_{x = 0}^{x = 2} \: \mathrm{d}y} \\
+    \notag{= \int_{-2}^2 (\frac{16}{3} + 2y) \: \mathrm{d}y = \frac{16}{3}y + y^2 \Big|_{-2}^{2} = \Bigg[\Big(\frac{16}{3}(2) + 4\Big) - \Big(\frac{16}{3}(-2) + 4\Big)\Bigg]} \\
     \notag{= \frac{64}{3} = 21.\bar{3}}
 \end{gather}
 
